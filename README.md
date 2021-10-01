@@ -4,10 +4,10 @@
 
 - I first created a custom VPC 
 - I then mad an internet gateway so inbound and outbound traffic can pass through
-- I then made a public and a private subnet.
+- I then made a public and two private subnets.
 - I added a NAT Gateway to the public subnet
 - I then made a route table for the public subnet and added the igw (internet gateway) as a route.
-- I made the route table fro the private subnet and added the NAT Gateway as a route.
+- I made the route table for one of the private subnets and added the NAT Gateway as a route.
 - Next, I created an EC2 in the public subnet where the web app would be installed. I also set up the security group for the EC2.
 - Finally, I created the RDS database in the private subnet with teh same security group as the EC2 so they could communicate with each other so the databse could be accessed and manipulated.
 
